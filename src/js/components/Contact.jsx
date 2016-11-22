@@ -1,10 +1,14 @@
 var React = require('react');
-var Link = require('react-router').Link;
+var Contact = React.createClass ({
 
-
-var Contact = React.createClass 
-
-
-	
+	render: function () {
+		return (
+			<div>
+				<h1>Contact</h1>
+				{this.props.children}
+			</div>
+		);
+	}
+});
 
 module.exports = Contact;
