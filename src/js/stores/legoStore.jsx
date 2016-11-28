@@ -1,11 +1,6 @@
 var EventEmitter = require('eventemitter3');
 var legoStore = Object.create(EventEmitter);
-var legos = [
-	{ id: 1, name: 'Scuba Steve', salary: 3.50},
-	{ id: 2, name: 'Martin Lawrence', salary: 100000},
-	{ id: 3, name: 'Gina', salary: "too much!"}
-
-];
+var legos = [];
 
 EventEmitter.apply(legoStore);
 
@@ -13,10 +8,29 @@ legoStore.get = function () {
 	return legos;
 };
 
-legoStore.find = function (id) {
-	return legos.find(function (lego) {
-		return lego.id === id;
+// legoStore.find = function (id) {
+// 	return legos.find(function (lego) {
+// 		return lego.id === id;
+// 	});
+// };
+
+legoStore.fetchLegos = function (offset) {
+	offest = offset || 0;
+
+	$.ajax({
+		url: '' + offset,
+		success: function (response) { 
+			var results = response.data.results;
+			legos = legos.concat(results);
+			legoStore.emit('update');
+		}
 	});
+
+	return legos;
 };
+
+// https://gateway.marvel.com/v1/public/characters?apikey=507d1910c614c046ed94c1e4643096a2&offset=
+
+
 
 module.exports = legoStore;

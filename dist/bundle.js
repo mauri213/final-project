@@ -57,8 +57,8 @@
 	var Map = __webpack_require__(234);
 	var Home = __webpack_require__(235);
 	var About = __webpack_require__(236);
-	var Contact = __webpack_require__(237);
-	var Lego = __webpack_require__(238);
+	var Contact = __webpack_require__(240);
+	var Lego = __webpack_require__(237);
 
 	var jsx = React.createElement(
 		Router,
@@ -26406,7 +26406,7 @@
 					),
 					React.createElement(
 						Link,
-						{ to: '/contact/map', className: getActiveClass('/contact/map') },
+						{ to: '/contact', className: getActiveClass('/contact') },
 						'Contact'
 					)
 				),
@@ -26428,26 +26428,18 @@
 
 /***/ },
 /* 234 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	var React = __webpack_require__(1);
-	var Map = React.createClass({
-		displayName: 'Map',
+	// var React = require('react');
+	// var Map = React.createClass ({
 
+	// 	render: function () {
+	// 		return <h1>Map</h1>
+	// 		{this.props.children}
+	// 	}
+	// });
 
-		render: function () {
-			return React.createElement(
-				'h1',
-				null,
-				'Map'
-			);
-			{
-				this.props.children;
-			}
-		}
-	});
-
-	module.exports = Map;
+	// module.exports = Map;
 
 /***/ },
 /* 235 */
@@ -26475,8 +26467,8 @@
 
 	var React = __webpack_require__(1);
 	var Link = __webpack_require__(178).Link;
-	var Lego = __webpack_require__(238);
-	var legoStore = __webpack_require__(239);
+	var Lego = __webpack_require__(237);
+	var legoStore = __webpack_require__(238);
 
 	var About = React.createClass({
 		displayName: 'About',
@@ -26516,32 +26508,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
-	var Contact = React.createClass({
-		displayName: 'Contact',
-
-
-		render: function () {
-			return React.createElement(
-				'div',
-				null,
-				React.createElement(
-					'h1',
-					null,
-					'Contact'
-				),
-				this.props.children
-			);
-		}
-	});
-
-	module.exports = Contact;
-
-/***/ },
-/* 238 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var React = __webpack_require__(1);
-	var legoStore = __webpack_require__(239);
+	var legoStore = __webpack_require__(238);
 
 	var Lego = React.createClass({
 		displayName: 'Lego',
@@ -26567,12 +26534,12 @@
 	module.exports = Lego;
 
 /***/ },
-/* 239 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var EventEmitter = __webpack_require__(240);
+	var EventEmitter = __webpack_require__(239);
 	var legoStore = Object.create(EventEmitter);
-	var legos = [{ id: 1, name: 'Scuba Steve', salary: 3.50 }, { id: 2, name: 'Martin Lawrence', salary: 100000 }, { id: 3, name: 'Gina', salary: "too much!" }];
+	var legos = [];
 
 	EventEmitter.apply(legoStore);
 
@@ -26580,16 +26547,34 @@
 		return legos;
 	};
 
-	legoStore.find = function (id) {
-		return legos.find(function (lego) {
-			return lego.id === id;
+	// legoStore.find = function (id) {
+	// 	return legos.find(function (lego) {
+	// 		return lego.id === id;
+	// 	});
+	// };
+
+	legoStore.fetchLegos = function (offset) {
+		offest = offset || 0;
+
+		$.ajax({
+			url: '' + offset,
+			success: function (response) {
+				var results = response.data.results;
+				legos = legos.concat(results);
+				legoStore.emit('update');
+			}
 		});
+
+		return legos;
 	};
+
+	// https://gateway.marvel.com/v1/public/characters?apikey=507d1910c614c046ed94c1e4643096a2&offset=
+
 
 	module.exports = legoStore;
 
 /***/ },
-/* 240 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26904,6 +26889,31 @@
 	  module.exports = EventEmitter;
 	}
 
+
+/***/ },
+/* 240 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+	var Contact = React.createClass({
+		displayName: 'Contact',
+
+
+		render: function () {
+			return React.createElement(
+				'div',
+				null,
+				React.createElement(
+					'h1',
+					null,
+					'Contact'
+				),
+				this.props.children
+			);
+		}
+	});
+
+	module.exports = Contact;
 
 /***/ }
 /******/ ]);

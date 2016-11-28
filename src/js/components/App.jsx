@@ -14,7 +14,7 @@ var App = React.createClass({
 				<header>
 					<Link to="/" className={getActiveClass('/') }>Home</Link>
 					<Link to="/about" className={getActiveClass('/about') }>About</Link>
-					<Link to="/contact/map" className={getActiveClass('/contact/map') }>Contact</Link>
+					<Link to="/contact" className={getActiveClass('/contact') }>Contact</Link>
 				</header>
 				<main>
 					<h1>Legocy</h1>
