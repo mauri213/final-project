@@ -54,11 +54,10 @@
 	var hashHistory = ReactRouter.hashHistory;
 
 	var App = __webpack_require__(233);
-	var Map = __webpack_require__(234);
-	var Home = __webpack_require__(235);
-	var About = __webpack_require__(236);
-	var Contact = __webpack_require__(240);
-	var Lego = __webpack_require__(237);
+	var Home = __webpack_require__(234);
+	var About = __webpack_require__(235);
+	var Contact = __webpack_require__(239);
+	var Lego = __webpack_require__(236);
 
 	var jsx = React.createElement(
 		Router,
@@ -69,11 +68,7 @@
 			React.createElement(IndexRoute, { component: Home }),
 			React.createElement(Route, { path: 'about', component: About }),
 			React.createElement(Route, { path: 'about/:id', component: Lego }),
-			React.createElement(
-				Route,
-				{ path: 'contact', component: Contact },
-				React.createElement(Route, { path: 'map', component: Map })
-			)
+			React.createElement(Route, { path: 'contact', component: Contact })
 		)
 	);
 
@@ -26428,21 +26423,6 @@
 
 /***/ },
 /* 234 */
-/***/ function(module, exports) {
-
-	// var React = require('react');
-	// var Map = React.createClass ({
-
-	// 	render: function () {
-	// 		return <h1>Map</h1>
-	// 		{this.props.children}
-	// 	}
-	// });
-
-	// module.exports = Map;
-
-/***/ },
-/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
@@ -26462,13 +26442,13 @@
 	module.exports = Home;
 
 /***/ },
-/* 236 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
 	var Link = __webpack_require__(178).Link;
-	var Lego = __webpack_require__(237);
-	var legoStore = __webpack_require__(238);
+	var Lego = __webpack_require__(236);
+	var legoStore = __webpack_require__(237);
 
 	var About = React.createClass({
 		displayName: 'About',
@@ -26496,6 +26476,21 @@
 					null,
 					'About ',
 					links
+				),
+				React.createElement(
+					'p',
+					null,
+					'Beginnings'
+				),
+				React.createElement(
+					'p',
+					null,
+					'Current'
+				),
+				React.createElement(
+					'p',
+					null,
+					'Future'
 				)
 			);
 		}
@@ -26504,11 +26499,11 @@
 	module.exports = About;
 
 /***/ },
-/* 237 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
-	var legoStore = __webpack_require__(238);
+	var legoStore = __webpack_require__(237);
 
 	var Lego = React.createClass({
 		displayName: 'Lego',
@@ -26534,10 +26529,10 @@
 	module.exports = Lego;
 
 /***/ },
-/* 238 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var EventEmitter = __webpack_require__(239);
+	var EventEmitter = __webpack_require__(238);
 	var legoStore = Object.create(EventEmitter);
 	var legos = [];
 
@@ -26574,7 +26569,7 @@
 	module.exports = legoStore;
 
 /***/ },
-/* 239 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26891,7 +26886,7 @@
 
 
 /***/ },
-/* 240 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);

@@ -8,7 +8,6 @@ var IndexRoute = ReactRouter.IndexRoute;
 var hashHistory = ReactRouter.hashHistory;
 
 var App = require('./components/App.jsx');
-var Map = require('./components/Map.jsx');
 var Home = require('./components/Home.jsx');
 var About = require('./components/About.jsx');
 var Contact = require('./components/Contact.jsx');
@@ -22,7 +21,6 @@ var jsx = (
 			<Route path="about" component={About} />
 			<Route path="about/:id" component={Lego} /> 
 			<Route path="contact" component={Contact}>
-				<Route path="map" component={Map} />
 			</Route>
 		</Route>
 	</Router>

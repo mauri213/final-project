@@ -17,7 +17,10 @@ var About = React.createClass ({
 		});
 		return (
 			<div>
-				<h1>About {links}</h1> 
+				<h1>About {links}</h1>
+				<p>Beginnings</p>
+				<p>Current</p>
+				<p>Future</p>
 			</div>
 		);
 	}
