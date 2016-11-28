@@ -18,9 +18,12 @@ var About = React.createClass ({
 		return (
 			<div>
 				<h1>About {links}</h1>
-				<p>Beginnings</p>
-				<p>Current</p>
-				<p>Future</p>
+				<h3>Beginnings</h3>
+				<p>The name 'LEGO' is an abbreviation of the two Danish words "leg godt", meaning "play well".
+				The LEGO Group was founded in 1932 by Ole Kirk Kristiansen. Lego produced their first
+				construction toy in 1935.</p>
+				<h3>Current</h3>
+				<h3>Future</h3>
 			</div>
 		);
 	}

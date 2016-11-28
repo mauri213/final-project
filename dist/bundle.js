@@ -26478,17 +26478,22 @@
 					links
 				),
 				React.createElement(
-					'p',
+					'h3',
 					null,
 					'Beginnings'
 				),
 				React.createElement(
 					'p',
 					null,
+					'The name \'LEGO\' is an abbreviation of the two Danish words "leg godt", meaning "play well". The LEGO Group was founded in 1932 by Ole Kirk Kristiansen. Lego produced their first construction toy in 1935.'
+				),
+				React.createElement(
+					'h3',
+					null,
 					'Current'
 				),
 				React.createElement(
-					'p',
+					'h3',
 					null,
 					'Future'
 				)
@@ -26910,11 +26915,6 @@
 	          "form",
 	          { id: "contact", action: "", method: "post" },
 	          React.createElement(
-	            "h3",
-	            null,
-	            "Quick Contact"
-	          ),
-	          React.createElement(
 	            "fieldset",
 	            null,
 	            React.createElement("input", { placeholder: "Your name", type: "text", tabindex: "1", required: true, autofocus: true })
@@ -26923,16 +26923,6 @@
 	            "fieldset",
 	            null,
 	            React.createElement("input", { placeholder: "Your Email Address", type: "email", tabindex: "2", required: true })
-	          ),
-	          React.createElement(
-	            "fieldset",
-	            null,
-	            React.createElement("input", { placeholder: "Your Phone Number", type: "tel", tabindex: "3", required: true })
-	          ),
-	          React.createElement(
-	            "fieldset",
-	            null,
-	            React.createElement("input", { placeholder: "Your Web Site starts with http://", type: "url", tabindex: "4", required: true })
 	          ),
 	          React.createElement(
 	            "fieldset",
