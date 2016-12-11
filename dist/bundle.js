@@ -26403,6 +26403,21 @@
 						Link,
 						{ to: '/contact', className: getActiveClass('/contact') },
 						'Contact'
+					),
+					React.createElement(
+						'a',
+						{ href: 'https://www.facebook.com/LEGO/' },
+						'Facebook'
+					),
+					React.createElement(
+						'a',
+						{ href: 'https://twitter.com/LEGO_Group?lang=en' },
+						'Twitter'
+					),
+					React.createElement(
+						'a',
+						{ href: 'https://www.youtube.com/user/LEGO' },
+						'YouTube'
 					)
 				),
 				React.createElement(
@@ -26414,12 +26429,27 @@
 						'Legocy'
 					),
 					this.props.children
+				),
+				React.createElement(
+					'div',
+					null,
+					React.createElement(
+						'footer',
+						null,
+						'Legal stuff'
+					)
 				)
 			);
 		}
 	});
 
 	module.exports = App;
+
+	// <header>
+	// 		<img src="/users/mauri213/desktop/projects/finalproject/facebook-icon.jpg">
+	// 		<img src="/users/mauri213/desktop/projects/finalproject/twitter-icon.jpg">
+	// 		<img src="/users/mauri213/desktop/projects/finalproject/youtube-icon.jpg">
+	// 	</header>
 
 /***/ },
 /* 234 */
@@ -26440,6 +26470,18 @@
 	});
 
 	module.exports = Home;
+
+	// 	<script>
+	//  	function play(){
+	//        var audio = document.getElementById("audio");
+	//        audio.play();
+	//                  }
+	//    	</script>
+	// <img src="/users/mauri213/desktop/projects/finalproject/lego-head-silhouette.jpg">
+	// <img src="/users/mauri213/desktop/projects/finalproject/FullSizeRender.jpg"" value="SUBMIT"  onclick="play()">
+
+	// <audio id="audio" src="/users/mauri213/desktop/projects/finalproject/lego-click.wav" ></audio>
+	// 	<script type="text/javascript" src="bundle.js"></script>
 
 /***/ },
 /* 235 */
@@ -26480,22 +26522,42 @@
 				React.createElement(
 					'h3',
 					null,
-					'Beginnings'
+					'Beginnings*'
 				),
 				React.createElement(
 					'p',
 					null,
-					'The name \'LEGO\' is an abbreviation of the two Danish words "leg godt", meaning "play well". The LEGO Group was founded in 1932 by Ole Kirk Kristiansen. Lego produced their first construction toy in 1935.'
+					'In 1932, Ole Kirk Kristiansen, master carpenter and joiner, establishes his business in the village of Billund, Denmark. His firm manufactures stepladders, ironing boards, stools and wooden toys. The name \'LEGO\' is an abbreviation of the two Danish words "leg godt", meaning "play well". Lego produced their first construction toy in 1935. In 1958, The current LEGO stud-and-tube coupling system is patented. The new coupling principle makes models much more stable. '
 				),
 				React.createElement(
 					'h3',
 					null,
-					'Current'
+					'Current*'
+				),
+				React.createElement(
+					'p',
+					null,
+					'LEGO\xAE products are now sold in more than 140 countries. In 2014, The LEGO Movie premieres in a number of countries. The movie is written by Phil Lord and Chris Miller and produced by Warner Brothers. It is the first time the LEGO universe has been pictured in a movie. As part of the strategy to expand the company\u2019s global presence, the LEGO Group announces that in addition to the headquarters in Billund (Denmark), main offices will be established in London (England), Enfield (USA), Singapore and Shanghai (China).The strong growth continues and the LEGO Group presents very satisfactory annual results for 2013. In less than 10 years, the company has quadrupled its revenue'
 				),
 				React.createElement(
 					'h3',
 					null,
-					'Future'
+					'Future**'
+				),
+				React.createElement(
+					'p',
+					null,
+					'The LEGO group has revealed that it has plans to make its company more eco-friendly in the years to come. LEGO wants to stop using plastic and find sustainable alternatives to its current materials. LEGO expects to recruit more than 100 employees in the coming years as it works toward making the company more eco-friendly by the year 2030. During this year and next year, a LEGO Sustainable Materials Centre organization will be established to develop partnerships with experts all around the globe.'
+				),
+				React.createElement(
+					'p',
+					null,
+					'*https://www.lego.com/en-us/aboutus/lego-group/the_lego_history'
+				),
+				React.createElement(
+					'p',
+					null,
+					'**http://www.hngn.com/articles/104292/20150625/lego-sustainable-pieces-lego-will-stop-using-plastic-plans-to-become-eco-friendly.htm'
 				)
 			);
 		}
@@ -26896,53 +26958,37 @@
 
 	var React = __webpack_require__(1);
 	var Contact = React.createClass({
-	  displayName: "Contact",
+		displayName: "Contact",
 
 
-	  render: function () {
-	    return React.createElement(
-	      "div",
-	      null,
-	      React.createElement(
-	        "h1",
-	        null,
-	        "Contact"
-	      ),
-	      React.createElement(
-	        "div",
-	        { "class": "container" },
-	        React.createElement(
-	          "form",
-	          { id: "contact", action: "", method: "post" },
-	          React.createElement(
-	            "fieldset",
-	            null,
-	            React.createElement("input", { placeholder: "Your name", type: "text", tabindex: "1", required: true, autofocus: true })
-	          ),
-	          React.createElement(
-	            "fieldset",
-	            null,
-	            React.createElement("input", { placeholder: "Your Email Address", type: "email", tabindex: "2", required: true })
-	          ),
-	          React.createElement(
-	            "fieldset",
-	            null,
-	            React.createElement("textarea", { placeholder: "Type your Message Here....", tabindex: "5", required: true })
-	          ),
-	          React.createElement(
-	            "fieldset",
-	            null,
-	            React.createElement(
-	              "button",
-	              { name: "submit", type: "submit", id: "contact-submit", "data-submit": "...Sending" },
-	              "Submit"
-	            )
-	          )
-	        )
-	      ),
-	      this.props.children
-	    );
-	  }
+		render: function () {
+			return React.createElement(
+				"div",
+				null,
+				React.createElement(
+					"h1",
+					null,
+					"Contact"
+				),
+				React.createElement(
+					"div",
+					{ "class": "container" },
+					React.createElement(
+						"form",
+						{ id: "contact", action: "", method: "post" },
+						React.createElement("input", { placeholder: "Your name", type: "text", tabindex: "1", required: true, autofocus: true }),
+						React.createElement("input", { placeholder: "Your Email Address", type: "email", tabindex: "2", required: true }),
+						React.createElement("textarea", { placeholder: "Type your Message Here....", tabindex: "5", required: true }),
+						React.createElement(
+							"button",
+							{ name: "submit", type: "submit", id: "contact-submit", "data-submit": "...Sending" },
+							"Submit"
+						)
+					)
+				),
+				this.props.children
+			);
+		}
 	});
 
 	module.exports = Contact;
