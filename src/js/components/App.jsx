@@ -14,13 +14,13 @@ var App = React.createClass({
 				<header>
 				<button class="accordion">
 					<div>
-					<Link to="/" className={getActiveClass('/') }>Home</Link>
+						<Link to="/" className={getActiveClass('/') }>Home</Link>
 					</div>
 					<div>
-					<Link to="/about" className={getActiveClass('/about') }>About</Link>
+						<Link to="/about" className={getActiveClass('/about') }>About</Link>
 					</div>
 					<div>
-					<Link to="/contact" className={getActiveClass('/contact') }>Contact</Link>
+						<Link to="/contact" className={getActiveClass('/contact') }>Contact</Link>
 					</div>
 				</button>
 					<a href="https://www.facebook.com/LEGO/">Facebook</a>
@@ -42,9 +42,9 @@ var App = React.createClass({
 module.exports = App;
 
 // <header>
-// 		<img src="/users/mauri213/desktop/projects/finalproject/facebook-icon.jpg">
-// 		<img src="/users/mauri213/desktop/projects/finalproject/twitter-icon.jpg">
-// 		<img src="/users/mauri213/desktop/projects/finalproject/youtube-icon.jpg">
+// 		<img src="/users/mauri213/desktop/projects/final-project/facebook-icon.jpg">
+// 		<img src="/users/mauri213/desktop/projects/final-project/twitter-icon.jpg">
+// 		<img src="/users/mauri213/desktop/projects/final-project/youtube-icon.jpg">
 // 	</header>
 
 //accordion html

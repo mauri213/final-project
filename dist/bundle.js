@@ -26462,9 +26462,9 @@
 	module.exports = App;
 
 	// <header>
-	// 		<img src="/users/mauri213/desktop/projects/finalproject/facebook-icon.jpg">
-	// 		<img src="/users/mauri213/desktop/projects/finalproject/twitter-icon.jpg">
-	// 		<img src="/users/mauri213/desktop/projects/finalproject/youtube-icon.jpg">
+	// 		<img src="/users/mauri213/desktop/projects/final-project/facebook-icon.jpg">
+	// 		<img src="/users/mauri213/desktop/projects/final-project/twitter-icon.jpg">
+	// 		<img src="/users/mauri213/desktop/projects/final-project/youtube-icon.jpg">
 	// 	</header>
 
 	//accordion html
