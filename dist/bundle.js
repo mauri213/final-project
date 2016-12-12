@@ -26390,19 +26390,35 @@
 					'header',
 					null,
 					React.createElement(
-						Link,
-						{ to: '/', className: getActiveClass('/') },
-						'Home'
-					),
-					React.createElement(
-						Link,
-						{ to: '/about', className: getActiveClass('/about') },
-						'About'
-					),
-					React.createElement(
-						Link,
-						{ to: '/contact', className: getActiveClass('/contact') },
-						'Contact'
+						'button',
+						{ 'class': 'accordion' },
+						React.createElement(
+							'div',
+							null,
+							React.createElement(
+								Link,
+								{ to: '/', className: getActiveClass('/') },
+								'Home'
+							)
+						),
+						React.createElement(
+							'div',
+							null,
+							React.createElement(
+								Link,
+								{ to: '/about', className: getActiveClass('/about') },
+								'About'
+							)
+						),
+						React.createElement(
+							'div',
+							null,
+							React.createElement(
+								Link,
+								{ to: '/contact', className: getActiveClass('/contact') },
+								'Contact'
+							)
+						)
 					),
 					React.createElement(
 						'a',
@@ -26451,11 +26467,11 @@
 	// 		<img src="/users/mauri213/desktop/projects/finalproject/youtube-icon.jpg">
 	// 	</header>
 
-	//accordion html//
+	//accordion html
 	// <button class="accordion"></button>
 	// 
 
-	//accordion jsx//
+	//accordion jsx
 	// var acc = document.getElementsByClassName("accordion");
 
 	// for (var i = 0; i < acc.length; i++) {

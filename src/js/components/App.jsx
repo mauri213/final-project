@@ -12,9 +12,17 @@ var App = React.createClass({
 		return (
 			<div>
 				<header>
+				<button class="accordion">
+					<div>
 					<Link to="/" className={getActiveClass('/') }>Home</Link>
+					</div>
+					<div>
 					<Link to="/about" className={getActiveClass('/about') }>About</Link>
+					</div>
+					<div>
 					<Link to="/contact" className={getActiveClass('/contact') }>Contact</Link>
+					</div>
+				</button>
 					<a href="https://www.facebook.com/LEGO/">Facebook</a>
 					<a href="https://twitter.com/LEGO_Group?lang=en">Twitter</a>
 					<a href="https://www.youtube.com/user/LEGO">YouTube</a>
@@ -39,11 +47,11 @@ module.exports = App;
 // 		<img src="/users/mauri213/desktop/projects/finalproject/youtube-icon.jpg">
 // 	</header>
 
-//accordion html//
+//accordion html
 // <button class="accordion"></button>
 // 
 
-//accordion jsx//
+//accordion jsx
 // var acc = document.getElementsByClassName("accordion");
 
 // for (var i = 0; i < acc.length; i++) {
