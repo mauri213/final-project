@@ -26470,13 +26470,12 @@
 	});
 
 	module.exports = Home;
-
-	// 	<script>
+	//
+	//lego sound
 	//  	function play(){
 	//        var audio = document.getElementById("audio");
 	//        audio.play();
 	//                  }
-	//    	</script>
 	// <img src="/users/mauri213/desktop/projects/finalproject/lego-head-silhouette.jpg">
 	// <img src="/users/mauri213/desktop/projects/finalproject/FullSizeRender.jpg"" value="SUBMIT"  onclick="play()">
 
