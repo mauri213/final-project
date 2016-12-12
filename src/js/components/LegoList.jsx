@@ -6,7 +6,7 @@ var LegoListItem = require('./LegoListItem.jsx');
 var LegoList = React.createClass({
 	getInitialState: function () {
 		return {
-			offset: 50,
+			offset: 100,
 			heroes: legoStore.fetchLego()
 		};
 	},
@@ -35,7 +35,7 @@ var LegoList = React.createClass({
 
 	handleLoadClick: function () {
 		this.setState({
-			offset: this.state.offset + 50
+			offset: this.state.offset + 100
 		});
 		LegoStore.fetchLegos(this.state.offset);
 	}
