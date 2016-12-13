@@ -13,7 +13,6 @@ var Contact = React.createClass ({
       			  <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
   				</form>
 				</div>
-        {this.props.children}
 			</div>
 		);
 	}

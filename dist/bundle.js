@@ -26487,14 +26487,23 @@
 
 	var React = __webpack_require__(1);
 	var Home = React.createClass({
-		displayName: 'Home',
+		displayName: "Home",
 
 
 		render: function () {
 			return React.createElement(
-				'h1',
+				"div",
 				null,
-				'Home'
+				React.createElement(
+					"h1",
+					null,
+					"Home"
+				),
+				React.createElement(
+					"button",
+					{ name: "submit", type: "submit", id: "contact-submit", "data-submit": "...Sending" },
+					"Submit"
+				)
 			);
 		}
 	});
@@ -26510,11 +26519,66 @@
 	//                  }
 
 	// <audio id="audio" src="/users/mauri213/desktop/projects/finalproject/lego-click.wav" ></audio>
-	// 	<script type="text/javascript" src="bundle.js"></script>
+	// <script type="text/javascript" src="bundle.js"></script>
 
 	//pictures
 	// <img src="/users/mauri213/desktop/projects/finalproject/lego-head-silhouette.jpg">
 	// <img src="/users/mauri213/desktop/projects/finalproject/FullSizeRender.jpg"" value="SUBMIT" onclick="play()">
+
+	//slideshow
+	// var counter = 0,
+	//     $items = $('.diy-slideshow figure'), 
+	//     numItems = $items.length; 
+
+	// var showCurrent = function(){
+	//     var itemToShow = Math.abs(counter%numItems);
+
+	//   $items.removeClass('show'); 
+	//   $items.eq(itemToShow).addClass('show');    
+	// };
+
+	// $('.next').on('click', function(){
+	//     counter++;
+	//     showCurrent(); 
+	// });
+	// $('.prev').on('click', function(){
+	//     counter--;
+	//     showCurrent(); 
+	// });
+
+	// if('ontouchstart' in window){
+	//   $('.diy-slideshow').swipe({
+	//     swipeLeft:function() {
+	//       counter++;
+	//       showCurrent(); 
+	//     },
+	//     swipeRight:function() {
+	//       counter--;
+	//       showCurrent(); 
+	//     }
+	//   });
+	// }
+
+	//photo gallery
+	// var $overlay = $('<div id="overlay"></div>');
+	// var $image = $("<img>");
+
+	// $overlay.append($image);
+
+	// $("body").append($overlay);
+
+	//   $("#photo-gallery a").click( function(event) {
+	//     event.preventDefault();
+	//     var imageLocation = $(this).attr("href");
+
+	//     $image.attr("src", imageLocation);
+
+	//     $overlay.show();
+	//   } );
+
+	//   $("#overlay").click(function() {
+	//     $( "#overlay" ).hide();
+	//   });
 
 /***/ },
 /* 235 */
@@ -26652,7 +26716,7 @@
 		offest = offset || 0;
 
 		$.ajax({
-			url: 'https://http://www.cubiculus.com/api/usage/' + offset,
+			url: 'https://gateway.marvel.com/v1/public/characters?apikey=507d1910c614c046ed94c1e4643096a2&offset=' + offset,
 			success: function (response) {
 				var results = response.data.results;
 				legos = legos.concat(results);
@@ -27017,8 +27081,7 @@
 							"Submit"
 						)
 					)
-				),
-				this.props.children
+				)
 			);
 		}
 	});

@@ -2,7 +2,12 @@ var React = require('react');
 var Home = React.createClass ({
 
 	render: function () {
-		return  <h1>Home</h1>;
+		return (
+			<div>
+				<h1>Home</h1>
+				<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+			</div>
+		);
 	}
 });
 

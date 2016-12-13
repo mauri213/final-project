@@ -1,34 +1,14 @@
 var React = require('react');
 
-var LegoDetails = require('./LegoDetails.jsx')
-
-var LegoListItem = React.createClass({
-
-	getInitialState: function () {
-		return {
-			detailsVisible: false
-		}
-	},
+var LegoDetails = React.createClass({
 	render: function () {
-		var details;
-
-		if (this.state.detailsVisible) {
-			details = <LegoDetails lego={this.props.lego} />;
-		}
-
 		return (
-			<div onClick={this.handleDetailsClick}>
-				{this.props.lego.name}
-				{details}
+			<div>
+				<h4>Description</h4>
+				<p>{this.props.lego.description}</p>
 			</div>
 		);
-	},
-	
-	handleDetailsClick: function () {
-		this.setState({
-			detailsVisible: !this.state.detailsVisible
-		});
 	}
 });
 
-module.exports = LegoListItem; 
+module.exports = LegoDetails;
