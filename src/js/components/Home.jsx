@@ -18,10 +18,42 @@ module.exports = Home;
 //                  }
 
 // <audio id="audio" src="/users/mauri213/desktop/projects/finalproject/lego-click.wav" ></audio>
-// 	<script type="text/javascript" src="bundle.js"></script>
+// <script type="text/javascript" src="bundle.js"></script>
 
 //pictures
 // <img src="/users/mauri213/desktop/projects/finalproject/lego-head-silhouette.jpg">
 // <img src="/users/mauri213/desktop/projects/finalproject/FullSizeRender.jpg"" value="SUBMIT" onclick="play()">
 
+//slideshow
+// var counter = 0,
+//     $items = $('.diy-slideshow figure'), 
+//     numItems = $items.length; 
 
+// var showCurrent = function(){
+//     var itemToShow = Math.abs(counter%numItems);
+   
+//   $items.removeClass('show'); 
+//   $items.eq(itemToShow).addClass('show');    
+// };
+ 
+// $('.next').on('click', function(){
+//     counter++;
+//     showCurrent(); 
+// });
+// $('.prev').on('click', function(){
+//     counter--;
+//     showCurrent(); 
+// });
+
+// if('ontouchstart' in window){
+//   $('.diy-slideshow').swipe({
+//     swipeLeft:function() {
+//       counter++;
+//       showCurrent(); 
+//     },
+//     swipeRight:function() {
+//       counter--;
+//       showCurrent(); 
+//     }
+//   });
+// }
