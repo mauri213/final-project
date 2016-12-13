@@ -26500,17 +26500,21 @@
 	});
 
 	module.exports = Home;
-	//
+	//submit button
+	// <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+
 	//lego sound
 	//  	function play(){
 	//        var audio = document.getElementById("audio");
 	//        audio.play();
 	//                  }
-	// <img src="/users/mauri213/desktop/projects/finalproject/lego-head-silhouette.jpg">
-	// <img src="/users/mauri213/desktop/projects/finalproject/FullSizeRender.jpg"" value="SUBMIT"  onclick="play()">
 
 	// <audio id="audio" src="/users/mauri213/desktop/projects/finalproject/lego-click.wav" ></audio>
 	// 	<script type="text/javascript" src="bundle.js"></script>
+
+	//pictures
+	// <img src="/users/mauri213/desktop/projects/finalproject/lego-head-silhouette.jpg">
+	// <img src="/users/mauri213/desktop/projects/finalproject/FullSizeRender.jpg"" value="SUBMIT" onclick="play()">
 
 /***/ },
 /* 235 */
@@ -26648,7 +26652,7 @@
 		offest = offset || 0;
 
 		$.ajax({
-			url: '' + offset,
+			url: 'https://http://www.cubiculus.com/api/usage/' + offset,
 			success: function (response) {
 				var results = response.data.results;
 				legos = legos.concat(results);
@@ -26658,7 +26662,6 @@
 
 		return legos;
 	};
-
 	// https://gateway.marvel.com/v1/public/characters?apikey=507d1910c614c046ed94c1e4643096a2&offset=
 
 

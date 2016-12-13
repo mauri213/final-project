@@ -18,7 +18,7 @@ legoStore.fetchLegos = function (offset) {
 	offest = offset || 0;
 
 	$.ajax({
-		url: '' + offset,
+		url: 'https://http://www.cubiculus.com/api/usage/' + offset,
 		success: function (response) { 
 			var results = response.data.results;
 			legos = legos.concat(results);
@@ -28,7 +28,6 @@ legoStore.fetchLegos = function (offset) {
 
 	return legos;
 };
-
 // https://gateway.marvel.com/v1/public/characters?apikey=507d1910c614c046ed94c1e4643096a2&offset=
 
 

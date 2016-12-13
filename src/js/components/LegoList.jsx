@@ -7,7 +7,7 @@ var LegoList = React.createClass({
 	getInitialState: function () {
 		return {
 			offset: 100,
-			heroes: legoStore.fetchLego()
+			legos: legoStore.fetchLego()
 		};
 	},
 
