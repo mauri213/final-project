@@ -4,7 +4,6 @@ var Home = React.createClass ({
 	render: function () {
 		return (
 			<div>
-				<h1>Home</h1>
 				<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
 			</div>
 		);
