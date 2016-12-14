@@ -26559,7 +26559,7 @@
 	//   });
 	// }
 
-	//photo gallery
+	//photo gallerys
 	// var $overlay = $('<div id="overlay"></div>');
 	// var $image = $("<img>");
 
@@ -26716,7 +26716,7 @@
 		offest = offset || 0;
 
 		$.ajax({
-			url: 'http://www.cubiculus.com/api-rest/lego-set/{epispvfmm0kekvrajkbrj0bnovg19k2tm5fg18opf5ta2r4ms67r9nf8rdjj67ek}/10187' + offset,
+			url: 'http://brickset.com/tools/webservices/v2/apikey=QK7V-K9Pc-HH1l' + offset,
 			success: function (response) {
 				var results = response.data.results;
 				legos = legos.concat(results);
@@ -26728,6 +26728,9 @@
 	};
 
 	module.exports = legoStore;
+
+	//api key
+	//epispvfmm0kekvrajkbrj0bnovg19k2tm5fg18opf5ta2r4ms67r9nf8rdjj67ek
 
 /***/ },
 /* 238 */

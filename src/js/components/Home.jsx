@@ -63,7 +63,7 @@ module.exports = Home;
 //   });
 // }
 
-//photo gallery
+//photo gallerys
 // var $overlay = $('<div id="overlay"></div>');
 // var $image = $("<img>");
 
