@@ -1,11 +1,16 @@
-#sobre {
-	font-family: Arial;
-	background-color: orange;
-	// background-image: url("/users/mauri213/desktop/projects/final-project/facebook-icon.jpg");
-	width: 100%;
+header, footer {
+	color: #0088DD;
 }
 
-h1, h3 {
+#sobre {
+	font-family: Arial;
+	background-image: url('https://camo.derpicdn.net/a88d0b3220ec078971281e2ec39a59acf6055fbe?url=https%3A%2F%2Fc1.staticflickr.com%2F9%2F8170%2F7888293112_3141598545_b.jpg');
+	padding-left: 10px;
+	padding-right: 7px;
+	color: #000050;
+}
+
+h1, h2, h3 {
 	text-align: center;
 }
 
