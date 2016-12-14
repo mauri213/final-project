@@ -26609,7 +26609,7 @@
 			});
 			return React.createElement(
 				'div',
-				null,
+				{ id: 'sobre' },
 				React.createElement(
 					'h1',
 					null,

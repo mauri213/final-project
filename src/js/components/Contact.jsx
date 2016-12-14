@@ -3,7 +3,7 @@ var Contact = React.createClass ({
 
 	render: function () {
 		return (
-		<div class="container">  
+		<div class="container">
   			<form id="contact" action="" method="post">
     		<h3>Contact</h3>
     			<fieldset>

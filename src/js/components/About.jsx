@@ -16,7 +16,7 @@ var About = React.createClass ({
 			return <Link key={lego.id} to={'about/' + lego.id}>{lego.name}</Link>;
 		});
 		return (
-			<div>
+			<div id="sobre">
 				<h1>About {links}</h1>
 				<h3>Beginnings*</h3>
 				<p>In 1932, Ole Kirk Kristiansen, master carpenter and joiner, establishes his business in the village of Billund, Denmark. His firm manufactures stepladders, ironing boards, stools and wooden toys. The name 'LEGO' is an abbreviation of the two Danish words "leg godt", meaning "play well".
