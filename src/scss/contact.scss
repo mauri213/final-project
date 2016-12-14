@@ -16,8 +16,8 @@ body {
 	font-weight:300;
 	font-size: 12px;
 	line-height:30px;
-	color: dodgerblue;
-	background: orange;
+	color: #0088DD;
+	background: #000050;
 }
 
 .container {
@@ -34,7 +34,7 @@ body {
 }
 
 #contact h3 {
-	color: #000;
+	color: orange;
 	display: block;
 	text-align: center;
 	font-size: 30px;
@@ -45,15 +45,15 @@ body {
 fieldset {
 	border: medium none !important;
 	margin: 0 0 10px;
-	min-width: 50%;
+	min-width: 30%;
 	padding: 0;
-	width: 50%;
+	width: 30%;
 	
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
 	width: 100%;
-	border:1px solid #CCC;
+	border:1px solid #000050;
 	background:#FFF;
 	margin:0 0 5px;
 	padding:10px;
@@ -69,8 +69,8 @@ fieldset {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#0CF;
-	color:#FFF;
+	background:orange;
+	color: #000050;
 	margin:0 0 5px;
 	padding:10px;
 	font-size:15px;
