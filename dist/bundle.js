@@ -26648,12 +26648,12 @@
 				),
 				React.createElement(
 					'p',
-					null,
+					{ id: 'firstnote' },
 					'*https://www.lego.com/en-us/aboutus/lego-group/the_lego_history'
 				),
 				React.createElement(
 					'p',
-					null,
+					{ id: 'secondnote' },
 					'**http://www.hngn.com/articles/104292/20150625/lego-sustainable-pieces-lego-will-stop-using-plastic-plans-to-become-eco-friendly.htm'
 				)
 			);

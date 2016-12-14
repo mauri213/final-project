@@ -31,8 +31,8 @@ var About = React.createClass ({
 				<h3>Future**</h3>
 				<p>The LEGO group has revealed that it has plans to make its company more eco-friendly in the years to come. LEGO wants to stop using plastic and find sustainable alternatives to its current materials.
 				LEGO expects to recruit more than 100 employees in the coming years as it works toward making the company more eco-friendly by the year 2030. During this year and next year, a LEGO Sustainable Materials Centre organization will be established to develop partnerships with experts all around the globe.</p>
-				<p>*https://www.lego.com/en-us/aboutus/lego-group/the_lego_history</p>
-				<p>**http://www.hngn.com/articles/104292/20150625/lego-sustainable-pieces-lego-will-stop-using-plastic-plans-to-become-eco-friendly.htm</p>
+				<p id="firstnote">*https://www.lego.com/en-us/aboutus/lego-group/the_lego_history</p>
+				<p id="secondnote">**http://www.hngn.com/articles/104292/20150625/lego-sustainable-pieces-lego-will-stop-using-plastic-plans-to-become-eco-friendly.htm</p>
 			</div>
 		);
 	}
