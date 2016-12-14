@@ -27055,36 +27055,48 @@
 
 	var React = __webpack_require__(1);
 	var Contact = React.createClass({
-		displayName: "Contact",
+	  displayName: "Contact",
 
 
-		render: function () {
-			return React.createElement(
-				"div",
-				null,
-				React.createElement(
-					"h1",
-					null,
-					"Contact"
-				),
-				React.createElement(
-					"div",
-					{ "class": "container" },
-					React.createElement(
-						"form",
-						{ id: "contact", action: "", method: "post" },
-						React.createElement("input", { placeholder: "Your name", type: "text", tabindex: "1", required: true, autofocus: true }),
-						React.createElement("input", { placeholder: "Your Email Address", type: "email", tabindex: "2", required: true }),
-						React.createElement("textarea", { placeholder: "Type your Message Here....", tabindex: "5", required: true }),
-						React.createElement(
-							"button",
-							{ name: "submit", type: "submit", id: "contact-submit", "data-submit": "...Sending" },
-							"Submit"
-						)
-					)
-				)
-			);
-		}
+	  render: function () {
+	    return React.createElement(
+	      "div",
+	      { "class": "container" },
+	      React.createElement(
+	        "form",
+	        { id: "contact", action: "", method: "post" },
+	        React.createElement(
+	          "h3",
+	          null,
+	          "Contact"
+	        ),
+	        React.createElement(
+	          "fieldset",
+	          null,
+	          React.createElement("input", { placeholder: "Your name", type: "text", tabindex: "1", required: true, autofocus: true })
+	        ),
+	        React.createElement(
+	          "fieldset",
+	          null,
+	          React.createElement("input", { placeholder: "Your Email Address", type: "email", tabindex: "2", required: true })
+	        ),
+	        React.createElement(
+	          "fieldset",
+	          null,
+	          React.createElement("textarea", { placeholder: "Type your Message Here....", tabindex: "5", required: true })
+	        ),
+	        React.createElement(
+	          "fieldset",
+	          null,
+	          React.createElement(
+	            "button",
+	            { name: "submit", type: "submit", id: "contact-submit", "data-submit": "...Sending" },
+	            "Submit"
+	          )
+	        )
+	      )
+	    );
+	  }
 	});
 
 	module.exports = Contact;

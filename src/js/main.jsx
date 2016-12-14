@@ -13,7 +13,6 @@ var About = require('./components/About.jsx');
 var Contact = require('./components/Contact.jsx');
 var Lego = require('./components/Lego.jsx');
 
-
 var jsx = (
 	<Router history={hashHistory}>
 		<Route path="/" component={App}>
