@@ -1,14 +1,11 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
-	-moz-font-smoothing: antialiased;
-	-o-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
+*, *:before, *:after {
+    box-sizing: border-box;
+        }
+
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 body {
@@ -39,7 +36,8 @@ body {
 	text-align: center;
 	font-size: 30px;
 	font-weight: 400;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
+	margin-top: 10px;
 }
 
 fieldset {
@@ -75,6 +73,3 @@ fieldset {
 	padding: 10px;
 	font-size:15px;
 }
-
-
-
