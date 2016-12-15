@@ -1,36 +1,36 @@
 * {
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-font-smoothing:antialiased;
-	-moz-font-smoothing:antialiased;
-	-o-font-smoothing:antialiased;
-	font-smoothing:antialiased;
-	text-rendering:optimizeLegibility;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
 }
 
 body {
 	font-family: Arial;
-	font-weight:300;
+	font-weight: 300;
 	font-size: 12px;
-	line-height:30px;
+	line-height: 30px;
 	color: #0088DD;
 	background: #000050;
 }
 
 .container {
-	max-width:400px;
-	width:100%;
+	max-width: 400px;
+	width: 100%;
 	margin:0 auto;
-	position:relative;
+	position: relative;
 }
 
 #contact {
-	background:#F9F9F9;
-	padding:25px;
-	margin:50px 0;
+	background: #F9F9F9;
+	padding: 25px;
+	margin: 50px 0;
 }
 
 #contact h3 {
@@ -45,33 +45,33 @@ body {
 fieldset {
 	border: medium none !important;
 	margin: 0 0 10px;
-	min-width: 30%;
+	min-width: 40%;
 	padding: 0;
-	width: 30%;
+	width: 40%;
 	
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
 	width: 100%;
-	border:1px solid #000050;
-	background:#FFF;
-	margin:0 0 5px;
-	padding:10px;
+	border: 1px solid #000050;
+	background: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
 }
 
 #contact textarea {
-	height:100px;
-	max-width:100%;
-  	resize:none;
+	height: 100px;
+	max-width: 100%;
+  	resize: none;
 }
 
 #contact button[type="submit"] {
-	cursor:pointer;
-	width:100%;
-	border:none;
-	background:orange;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	background: orange;
 	color: #000050;
-	margin:0 0 5px;
-	padding:10px;
+	margin: 0 0 5px;
+	padding: 10px;
 	font-size:15px;
 }

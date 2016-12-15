@@ -11,7 +11,7 @@ var Lego = React.createClass({
 
 	render: function () {
 		return (
-			<div>{this.state.lego.name} - ${this.state.lego.salary}</div>
+			<div>{this.state.lego.name} - ${this.state.lego.store}</div>
 
 		);
 	}

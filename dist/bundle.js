@@ -26423,17 +26423,17 @@
 					React.createElement(
 						'a',
 						{ href: 'https://www.youtube.com/user/LEGO' },
-						React.createElement('img', { width: '50', height: '50', src: 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon-400x400.png' })
+						React.createElement('img', { width: '40', height: '40', src: 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon-400x400.png' })
 					),
 					React.createElement(
 						'a',
 						{ href: 'https://twitter.com/LEGO_Group?lang=en' },
-						React.createElement('img', { width: '50', height: '50', src: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJj3luh7ZRZs_urkwoZSC6AtAAtU_8R9YuRomgKUqjjkIIsaJH' })
+						React.createElement('img', { width: '40', height: '40', src: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJj3luh7ZRZs_urkwoZSC6AtAAtU_8R9YuRomgKUqjjkIIsaJH' })
 					),
 					React.createElement(
 						'a',
 						{ href: 'https://www.facebook.com/LEGO/' },
-						React.createElement('img', { width: '50', height: '50', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png' })
+						React.createElement('img', { width: '40', height: '40', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png' })
 					)
 				),
 				React.createElement(
@@ -26680,7 +26680,7 @@
 				null,
 				this.state.lego.name,
 				' - $',
-				this.state.lego.salary
+				this.state.lego.store
 			);
 		}
 	});
