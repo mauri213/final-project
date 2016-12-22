@@ -29,7 +29,6 @@ var App = React.createClass({
 				</header>
 				<main>
 					<h1>Legocy</h1>
-					{this.props.children} 
 				</main>
 				<div>
 				<footer>Legal stuff</footer>
@@ -40,18 +39,9 @@ var App = React.createClass({
 });
 
 module.exports = App;
+// Problem No. 1
+// accordion = have no idea where this should go:
 
-// <header>
-// 		<img src="/users/mauri213/desktop/projects/final-project/facebook-icon.jpg">
-// 		<img src="/users/mauri213/desktop/projects/final-project/twitter-icon.jpg">
-// 		<img src="/users/mauri213/desktop/projects/final-project/youtube-icon.jpg">
-// 	</header>
-
-//accordion html
-// <button class="accordion"></button>
-// 
-
-//accordion jsx
 // var acc = document.getElementsByClassName("accordion");
 
 // for (var i = 0; i < acc.length; i++) {
@@ -60,3 +50,12 @@ module.exports = App;
 //         this.nextElementSibling.classList.toggle("show");
 //   }
 // }
+
+// Problem No. 2
+// Can't link the About.jsx to the about.scss
+
+// Problem No. 3
+// Can't link the Contact.jsx to the contact.scss
+
+// Problem No. 4
+// Tried several things to get the photo gallery to work and ... nothing

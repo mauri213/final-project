@@ -12,8 +12,6 @@ var Home = React.createClass ({
 
 
 module.exports = Home;
-//submit button
-// <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
 
 //lego sound
 //  	function play(){
