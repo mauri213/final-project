@@ -8,67 +8,81 @@
     clear: both;
 }
 
+h1, footer, a {
+    color: #0088DD;
+    background-color: #000050;
+}
+a {
+    position: relative;
+    float: right;
+}
+
 body {
-	font-family: Arial;
-	font-weight: 300;
-	font-size: 12px;
-	line-height: 30px;
-	color: #0088DD;
-	background: #000050;
+    font-family: Arial;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 30px;
+    color: #0088DD;
+    background: #000050;
 }
 
 .container {
-	max-width: 400px;
-	width: 100%;
-	margin:0 auto;
-	position: relative;
+    max-width: 400px;
+    width: 100%;
+    margin:0 auto;
+    position: relative;
 }
 
 #contact {
-	background: #F9F9F9;
-	padding: 25px;
-	margin: 50px 0;
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 50px 0;
 }
 
 #contact h3 {
-	color: orange;
-	display: block;
-	text-align: center;
-	font-size: 30px;
-	font-weight: 400;
-	margin-bottom: 20px;
+    color: orange;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 40px;
 }
 
 fieldset {
-	border: medium none !important;
-	margin: 0 0 10px;
-	min-width: 40%;
-	padding: 0;
-	width: 40%;
-	
+    border: medium none !important;
+    // margin: 0 0 10px;
+    min-width: 45%;
+    // padding: 0;
+    width: 45%; 
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: -50px;
+ 
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-	width: 100%;
-	border: 1px solid #000050;
-	background: #FFF;
-	margin: 0 0 5px;
-	padding: 10px;
+    width: 100%;
+    border: 1px solid #000050;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
 }
 
 #contact textarea {
-	height: 100px;
-	max-width: 100%;
-  	resize: none;
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+
 }
 
 #contact button[type="submit"] {
-	cursor: pointer;
-	width: 100%;
-	border: none;
-	background: orange;
-	color: #000050;
-	margin: 0 0 5px;
-	padding: 10px;
-	font-size:15px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: orange;
+    color: #000050;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size:15px;
 }
